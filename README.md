@@ -5,7 +5,7 @@ I do not own this app, got this source from: https://github.com/ottools
 This is a test version to improve itemEdit, this implement the option "Item price", a need to be done (indeed?) feature to implement new features ingame.
 Need to add attribute with 0x2E hex on server itemloader.
 
-if you find this interesting, check my opentibiabr/otserv-global fork Feat/item-price branch to get this feature implemented ingame, all the server changes already has been made on this branch, except the otb changes with the item prices.
+if you find this interesting, check my opentibiabr/otserv-global fork Feat/item-price branch to get this feature implemented ingame, all the server changes already has been made on this branch, except the otb changes with the item prices. (This will take a while xD)
 [This fork](https://github.com/marcosvf132/otservbr-global/tree/Feat/Item-Price)
 ``` lua
 Game.getItemWorth(itemid) -- Return item price set on Item Edit.
