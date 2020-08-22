@@ -1,32 +1,15 @@
-# Prerequisites
-*.d
+# Scripts
+release/
+debug/
+packages/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Visual studio intermediate directories
+bin/
+obj/
+*.suo
+*.csproj.user
+*.vs/
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# StyleCop
+stylecop.*
+*cache
