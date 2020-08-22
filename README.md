@@ -1,3 +1,5 @@
+DO NOT TRY THIS ON YOUR LIVE SERVER, THIS IS ONLY A TEST.
+
 I do not own this app, got this source from: https://github.com/ottools
 
 This is a test version to improve itemEdit, this implement the option "Item price", a need to be done (indeed?) feature to implement new features ingame.
