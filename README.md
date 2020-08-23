@@ -2,7 +2,7 @@ DO NOT TRY THIS ON YOUR LIVE SERVER, THIS IS ONLY A TEST.
 
 I do not own this app, got this source from: https://github.com/ottools, i only did some changes on it.
 
-This is a test version to improve itemEdit, this implement the option "Item price", a need to be done (indeed?) feature to implement new features ingame.
+This is a test version to improve itemEdit by adding the option "Item price", a need to be done (indeed?) feature to implement new features ingame.
 
 if you find this interesting, check my opentibiabr/otserv-global fork Feat/item-price branch to get this feature implemented ingame, all the server changes already has been made on this branch, except the otb changes with the item prices. (This will take a while xD)
 [This fork](https://github.com/marcosvf132/otservbr-global/tree/Feat/Item-Price)
