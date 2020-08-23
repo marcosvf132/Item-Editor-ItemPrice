@@ -26,7 +26,7 @@ Supported versions:
 Download
 ----
 
-[ItemEditor](https://github.com/ottools/ItemEditor/releases) Ottools original ItemEditor
+[ItemEditor](https://github.com/ottools/ItemEditor/releases) Ottools original ItemEditor, this git repositoy is the edited version.
 
 Compiling
 ----
