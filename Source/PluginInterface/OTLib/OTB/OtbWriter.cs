@@ -303,7 +303,7 @@ namespace OTLib.OTB
                                     break;
 
                                 case ServerItemAttribute.PriceCount:
-                                    property.Write((ushort)item.PriceCount);
+                                    property.Write((uint)item.PriceCount);
                                     writer.WriteProp(ServerItemAttribute.PriceCount, property);
                                     break;
 

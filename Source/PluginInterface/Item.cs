@@ -103,8 +103,8 @@ namespace ItemEditor
         public bool IsAnimation { get; set; }
 
         public ushort GroundSpeed { get; set; }
-
-        public ushort PriceCount { get; set; }
+        
+        public uint PriceCount { get; set; }
 
         public ushort LightLevel { get; set; }
 

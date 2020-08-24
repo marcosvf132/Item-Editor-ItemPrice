@@ -605,7 +605,7 @@ namespace ItemEditor
             this.AddBinding(this.ignoreLookCheck, "Checked", item, "IgnoreLook", item.IgnoreLook, clientItem.IgnoreLook);
             this.AddBinding(this.fullGroundCheck, "Checked", item, "FullGround", item.FullGround, clientItem.FullGround);
             this.AddBinding(this.groundSpeedText, "Text", item, "GroundSpeed", item.GroundSpeed, clientItem.GroundSpeed, true);
-            this.AddBinding(this.PriceCountText, "Text", item, "PriceCount", item.PriceCount, clientItem.PriceCount, true);
+            this.AddBinding(this.PriceCountText, "Text", item, "PriceCount", item.PriceCount, clientItem.PriceCount, true, true);
             this.AddBinding(this.lightLevelText, "Text", item, "LightLevel", item.LightLevel, clientItem.LightLevel, true);
             this.AddBinding(this.lightColorText, "Text", item, "LightColor", item.LightColor, clientItem.LightColor, true);
             this.AddBinding(this.maxReadCharsText, "Text", item, "MaxReadChars", item.MaxReadChars, clientItem.MaxReadChars, true);
@@ -643,15 +643,15 @@ namespace ItemEditor
             return true;
         }
 
-        private void AddBinding(Control control, string propertyName, object dataSource, string dataMember, object value, object clientValue, bool setToolTip = false)
+        private void AddBinding(Control control, string propertyName, object dataSource, string dataMember, object value, object clientValue, bool setToolTip = false, bool priceColor = false)
         {
             bool equals = value.Equals(clientValue);
             control.DataBindings.Add(propertyName, dataSource, dataMember);
-            control.ForeColor = equals ? Colors.LightText : Color.Red;
+            control.ForeColor = (!equals && !priceColor) ? Color.Red : Colors.LightText;
 
             if (!equals && setToolTip)
             {
-                this.toolTip.SetToolTip(control, clientValue.ToString());
+                this.toolTip.SetToolTip(control, priceColor ? "Value is set only on otb file." : clientValue.ToString());
             }
         }
 

@@ -175,7 +175,7 @@ namespace OTLib.OTB
                                     break;
 
                                 case ServerItemAttribute.PriceCount:
-                                    item.PriceCount = node.ReadUInt16();
+                                    item.PriceCount = node.ReadUInt32();
                                     break;
 
                                 case ServerItemAttribute.Name:
